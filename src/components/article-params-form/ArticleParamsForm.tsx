@@ -43,6 +43,7 @@ export const ArticleParamsForm = ({ articleState, setArticleState }: ArticlePara
         setSelectedFontColor(defaultArticleState.fontColor);
         setSelectedBackgroundColor(defaultArticleState.backgroundColor);
         setSelectedContentWidth(defaultArticleState.contentWidth);
+        setArticleState(defaultArticleState);
         setActive(false);
     };
 
