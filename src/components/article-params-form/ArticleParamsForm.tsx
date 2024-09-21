@@ -48,6 +48,7 @@ export const ArticleParamsForm = ({ articleState, setArticleState }: ArticlePara
     };
 
 	useEffect(() => {
+        if (!active) return;
         const handleClickOutside = (e: MouseEvent) => {
             if (active && asideRef.current && !asideRef.current.contains(e.target as Node)) {
                 setActive(false);
